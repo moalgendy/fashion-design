@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="w3schoolcss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" href="img/logo_free-file.png" type="image/png">
+    <title>الاحذية</title>
+</head>
+<body>
+
+
+<!-- محمد وجدي مصطفي الجندي -->
+
+
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
+
+
+  <!-----NavigationBar----->
+<section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light" style="flex-wrap: nowrap;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/MO FASHION_free-file (4).png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ol class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="text.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">عنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="منتجات الاطفال.html">قسم الاطفال</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="منتجات البنات.html">قسم البنات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="منتجات الشباب.html">قسم الشباب</a>
+              </li>
+              
+            </ol>
+          </div>
+        </div>
+
+        <!------------------------------------------------------ search bar ------------------------------------------------------->
+
+        <div class="search">
+          <div class="icon"></div>
+          <div class="input">
+              <input type="text" placeholder="... اكتب هنا للبحث" id="mysearch">
+          </div>
+          <span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+        </div>
+      </nav>
+      <!-- Navbar on small screens -->
+<div id="nav-bar" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">عنا</a>
+  <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">قسم البنات</a>
+  <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">قسم الشباب</a>
+  <a href="#search" class="w3-bar-item w3-button" onclick="toggleFunction()" >البحث</a>
+</div>
+
+</div>
+</section>
+
+
+        <!-- search bar script -->
+
+
+<script>
+  const icon = document.querySelector('.icon');
+  const search = document.querySelector('.search');
+  icon.onclick = function() {
+      search.classList.toggle('active')
+  }
+</script>
+
+
+  
+  
+  
+  
+
+
+<!-------------------------------------------------------------------------------slider---------------------------------------------------------------->
+
+
+
+
+<div id="slider">
+    <div id="headrSlider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#headrSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#headrSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#headrSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#headrSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#headrSlider" data-bs-slide-to="4 " aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#headrSlider" data-bs-slide-to="5 " aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/80.jpg" class="d-block w-100" style="width:100%;  height: 660px; ">
+          <div class="carousel-caption">
+            <h5></h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/k3.jpeg" class="d-block w-100" style="width:100%;  height: 660px; ">
+          <div class="carousel-caption">
+            <h5></h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/k2.jpeg" class="d-block w-100" style="width:100%;  height: 660px; ">
+          <div class="carousel-caption">
+            <h5></h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/k8.jpeg" class="d-block w-100" style="width:100%;  height: 660px; ">
+          <div class="carousel-caption">
+            <h5></h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/37.jpg" class="d-block w-100" style="width:100%;  height: 660px; ">
+          <div class="carousel-caption">
+            <h5></h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/82.jpg" class="d-block w-100" style="width:100%;  height: 660px; ">
+          <div class="carousel-caption">
+            <h5> </h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#headrSlider" data-bs-slide="prev">
+        <span class="" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#headrSlider" data-bs-slide="next">
+        <span class="" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  
+
+      <!-- Project Section -->
+
+      <div class="container">
+        <div class="box">
+          <div class="imgBx">
+              <img src="img/81.jpg">
+          </div>
+          <div class="content">
+              <h6><a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                $50
+            </a><br><br><span>كوتشي اديدس</span> </h6>
+          </div> 
+        </div>
+        <div class="box">
+            <div class="imgBx">
+                <img src="img/38.jpg">
+            </div>
+            <div class="content">
+                <h6><a href="#">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  $38
+              </a><br><br><span>كوتشي اير</span></h6>
+            </div> 
+        </div>
+        <div class="box">
+          <div class="imgBx">
+              <img src="img/k7.jpeg">
+          </div>
+          <div class="content">
+              <h6><a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                $45
+              </a> <br><br><span>كوتشي لن</span></h6>
+          </div> 
+        </div>    
+
+        </div>
+      </div>
+      <div class="container">
+        <div class="box">
+          <div class="imgBx">
+              <img src="img/k4.jpeg">
+          </div>
+          <div class="content">
+              <h6><a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                $60
+            </a><br><br><span>بوت جلد طبيعي</span></h6>
+          </div> 
+        </div>
+        <div class="box">
+            <div class="imgBx">
+                <img src="img/k5.jpeg">
+            </div>
+            <div class="content">
+                <h6><a href="#">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  $42
+              </a><br><br><span>بوت المشي في الثلج</span></h6>
+            </div> 
+        </div>
+        <div class="box">
+          <div class="imgBx">
+              <img src="img/k1.jpeg">
+          </div>
+          <div class="content">
+              <h6><a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                $35
+              </a> <br><br><span>بوت ستاندر</span></h6>
+          </div> 
+        </div>    
+
+        </div>
+      </div>
+
+      <center>
+        <video src="video/8.mp4" width="50%" height="450px" controls ></video>
+        </center>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+      <!--------footer-------->
+
+      <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+
+        </div>
+        <ul class="social_icon">
+            <li><a  href="https://www.facebook.com/mhmad.algendy2018"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a  href="https://twitter.com/mo_algendy"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a  href="https://www.instagram.com/mhmad_algendy/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a  href="https://www.linkedin.com/in/%D9%85%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D8%AC%D9%86%D8%AF%D9%8A-%D9%80%D9%80-mohamed-algendy-b50057206/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+          <li>
+            <a  href="text.html">الرئيسية</a>
+          </li>
+          <li>
+            <a href="index.html">عنا</a>
+          </li>
+          <li>
+            <a href="منتجات الاطفال.html">قسم الاطفال</a>
+          </li>
+          <li>
+            <a href="منتجات البنات.html">قسم البنات</a>
+          </li>
+          <li>
+            <a href="منتجات الشباب.html">قسم الشباب</a>
+          </li>
+        </ul>   
+        <p>©2021 Mohamed Algendy | All Rights Reserved</p>
+    </footer>
+
+
+ <!-------------- loading -------------->
+
+ <div id="sp"  class="spinner">
+  <div class="container8">
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <p>Loading...</p>
+</div>
+
+</div>
+
+<script src="script2.js"></script>
+
+
+
+    <!-- ------ scroolbar ------- -->
+
+
+
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+          let progressHeight = (window.pageYOffset / totalHeight) * 100;
+          progress.style.height = progressHeight + "%";}
+      </script>
+
+</body>
+</html>
